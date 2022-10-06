@@ -1,0 +1,100 @@
+.contacts {
+  background: url(../../img/contacts-bg.png), $white-default;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding: 90px 15px 63px;
+  max-width: 800px;
+  width: 100%;
+
+    &__title {
+        margin-bottom: 42px;
+        text-align: center;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            bottom: 160%;
+            left: 46%;
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: $col-text-primary;
+
+            @include media-max($sm) {
+                width: 60px;
+            }   left: 44%;
+        }
+    }
+    
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 650px;
+        width: 100%;
+
+        @include media-max($sm) {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__input {
+        font-family: $font-secondary;
+        font-size: 18px;
+        line-height: 150%;
+        width: 310px;
+        padding-bottom: 14px;
+        border: 0;
+        border-bottom: 1px solid rgba(44, 64, 88, .2);
+        outline: none;
+
+        &::placeholder {
+            color: $form-non-active;
+            opacity: 0.5;
+        }
+
+        &:focus {
+            border-bottom: 1px solid $col-text-primary;
+        }
+    }
+
+    &__btn {
+        width: 140px;
+        align-self: flex-end;
+        font-size: 18px!important;
+        line-height: 156%;
+        padding: 11px 34px!important;
+    }
+
+    &__icon {
+        color: $commerce-center-substrate;
+        margin-right: 10px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        font-family: $font-secondary;
+        line-height: 156%;
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
+    }
+
+}

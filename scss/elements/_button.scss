@@ -1,0 +1,19 @@
+.btn {
+    padding: 16px 41px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid $col-text-primary;
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc((17/14)*100%);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: block;
+
+    &:hover {
+        background-color: $trade-center-substrate;
+        color: $white-default;
+        border: 1px solid $white-default;
+    }
+}

@@ -1,0 +1,30 @@
+.latest {
+    margin-top: 150px;
+    padding-top: 139px;
+    padding-bottom: 120px;
+    background: url(../../img/latest-bg.png), linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        margin-bottom: 90px;
+        text-align: center;
+        position: relative;
+        color: $white-default;
+    
+        &::before {
+            position: absolute;
+            bottom: 160%;
+            left: 46%;
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: $white-default;
+    
+            @include media-max($sm) {
+                width: 60px;
+                left: 44%;
+            }
+        }
+    }
+}

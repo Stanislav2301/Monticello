@@ -1,0 +1,83 @@
+.slider-header {
+    font-family: $font-secondary;
+    font-style: normal;
+    color: $white-default;
+    text-align: center;
+    margin-top: 215px;
+    position: relative;
+
+    @include media-max($sm) {
+        margin-top: 150px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: calc((98px/80px) * 100%);
+        letter-spacing: 0.1em;
+
+        @include media-max($sm) {
+            font-size: 50px;
+        }
+    }
+
+    &__description {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: calc((22px/18px) * 100%);
+        letter-spacing: 0.3em;
+
+        @include media-max($sm) {
+            font-size: 14px;
+        }
+    }
+
+    .slick {
+        position: relative;
+
+        &-list{
+            max-width: 1170px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        &-track {
+            display: flex;
+        }
+    
+        &-dots {
+            position: absolute;
+            top: 42%;
+            transform: translateY(-52%);
+            right: 3.2%;
+            list-style: none;
+
+            @include media-max($lg-max) {
+                display: flex!important;
+                justify-content: space-between;
+                position: static;
+                width: 100%;
+                max-width: 200px;
+                margin: 0 auto;
+                transform: unset;     
+            }
+
+            button {
+                    @extend %circle;
+                    outline: none;
+                    background-color: transparent;
+                    font-size: 0;
+                    padding: 0;
+                    margin-top: 35px;
+                    cursor: pointer;
+                }
+            
+            li.slick-active {
+
+                button {
+                    background-color: $white-default!important;
+                }   
+            }
+        }
+    }
+}

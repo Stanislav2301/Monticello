@@ -1,0 +1,26 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin-top: 130px;
+        margin-bottom: 150px;
+        text-align: center;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            bottom: 160%;
+            left: 46%;
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: $col-text-primary;
+
+            @include media-max($sm) {
+                width: 60px;
+                left: 44%;
+            }
+        }
+    }
+}

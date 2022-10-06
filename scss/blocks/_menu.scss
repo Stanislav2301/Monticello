@@ -1,0 +1,53 @@
+.menu {
+
+    &__list {
+        gap: 93px;
+        margin-bottom: 12px;
+        margin-left: 60px;
+
+        @include media-max($lg) {
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: -100%;
+        }
+
+        &.active {
+            @include media-max($lg) {
+                position: absolute;
+                top: 13%;
+                left: 50%;
+                transform: translate(-100%);
+                transition: left 0.5s ease-in-out;
+            }
+        }
+    }
+    &__link {
+        position: relative;
+        font-family: $font-nav;
+        text-decoration: none;
+        color: $white-default;
+        font-size: 14px;
+        line-height: 128%;
+
+        @include media-max($md) {
+            font-size: 18px;
+        }
+
+        &:hover::before {
+            background-color: $white-default;
+        }
+
+        &::before {
+            @extend %circle;
+            position: absolute;
+            top: 4px;
+            left: -24px;
+            transition: background-color 0.5s ease-in-out;
+            
+            @include media-max($md) {
+                top: 6px;
+            }
+        }
+    }
+}

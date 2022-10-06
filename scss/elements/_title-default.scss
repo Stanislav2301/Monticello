@@ -1,0 +1,11 @@
+.title-default {
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: calc((54/44)*100%);
+
+    @include media-max($xs-max) {
+        font-size: 30px;
+    }
+}

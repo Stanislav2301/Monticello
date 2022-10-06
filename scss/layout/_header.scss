@@ -1,0 +1,33 @@
+.header {
+    position: relative;
+    background-image: url(../img/header-bg-image.png), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 53px 0 50px;
+
+    &__nav-section {
+        align-items: center;
+    }
+
+    &__logo {
+        @include media-max($lg) {
+            flex-grow: 1;
+        }
+        & img {
+            @include media-max($xs) {
+                width: 75%;
+                height: 75%;
+            }
+        }
+    }
+
+    &__social {
+        @include media-max($sm) {
+            display: none;
+        }
+    }
+
+    &__btn-projects {
+        margin: 240px auto 0;
+    }
+}

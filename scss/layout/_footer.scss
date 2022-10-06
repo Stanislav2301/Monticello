@@ -1,0 +1,40 @@
+.footer {
+    background: url(../../img/footer-background.png), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%) 0 0 / 100% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 203px 0 243px;
+    position: relative;
+    z-index: 1;
+    
+    &-wrapper {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        @include media-max($sm) {
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+        }
+    }
+
+    &__copyright {
+        font-family: $font-secondary;
+        color: $white-default;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc((17/14)*100%);
+        margin-top: 41px;
+    }
+
+    &__contacts {
+        bottom: 73%;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        z-index: 5;
+    }
+}
