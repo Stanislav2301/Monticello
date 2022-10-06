@@ -551,7 +551,7 @@ body {
 }
 .slider-latest .slick-prev {
   right: 105.2%;
-  background: url(../../img/svg/prev.svg) 0 0/100% no-repeat;
+  background: url(../img/svg/prev.svg) 0 0/100% no-repeat;
 }
 @media screen and (max-width: 1024.98px) {
   .slider-latest .slick-prev {
@@ -560,7 +560,7 @@ body {
 }
 .slider-latest .slick-next {
   left: 105%;
-  background: url(../../img/svg/next.svg) 0 0/100% no-repeat;
+  background: url(../img/svg/next.svg) 0 0/100% no-repeat;
 }
 @media screen and (max-width: 1024.98px) {
   .slider-latest .slick-next {
@@ -687,7 +687,7 @@ body {
 .gallery__item:hover::after {
   content: "";
   position: absolute;
-  background-image: url(../../img/svg/bi_zoom-in.svg);
+  background-image: url(../img/svg/bi_zoom-in.svg);
   width: 70px;
   height: 70px;
   left: 50%;

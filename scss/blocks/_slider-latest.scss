@@ -32,7 +32,7 @@
 
             &-prev {
                 right: 105.2%;
-                background: url(../../img/svg/prev.svg) 0 0 / 100% no-repeat;
+                background: url(../img/svg/prev.svg) 0 0 / 100% no-repeat;
 
                 @include media-max($lg-max) {
                     right: 93%;
@@ -41,7 +41,7 @@
 
             &-next {
                 left: 105%;
-                background: url(../../img/svg/next.svg) 0 0 / 100% no-repeat;
+                background: url(../img/svg/next.svg) 0 0 / 100% no-repeat;
 
                 @include media-max($lg-max) {
                     left: 93%;
